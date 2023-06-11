@@ -11,9 +11,9 @@ body {
     font-size: 16px;
 }
 
-/* main */
-main {
-    padding-bottom: 50px;
+.container {
+    width: 840px;
+    margin: 0 auto;
 }
 
 /* mainvisual */
@@ -58,6 +58,7 @@ h2 {
 .voice,
 .flow {
     background-color: rgba(80, 80, 80, 80);
+    width: 100%;
 }
 
 /* introduce */
@@ -317,17 +318,15 @@ h4 {
 }
 
 /* achievement */
-.achievement {
-    padding-left: 40px;
-}
 
 .slick01 {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     height: 300px;
-    width: 1000px;
+    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .achievementーlist {
@@ -361,7 +360,7 @@ h4 {
 /* voice */
 .voice {
     color: #fff;
-    padding: 0 100px 40px 100px;
+    padding-bottom: 40px;
 }
 
 .customer-name {
@@ -378,7 +377,6 @@ h4 {
 .customer {
     background-color: #000;
     padding: 40px;
-    width: 800px;
     height: auto;
     margin: 0 auto;
 }
@@ -396,11 +394,15 @@ h4 {
 }
 
 .customer-photo {
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .customer-photo > img {
     width:300px;
+}
+
+.company-introduce {
+    padding-right: 10px;
 }
 
 /* price */
@@ -417,14 +419,15 @@ h4 {
 .plans {
     display: flex;
     justify-content: center;
-    padding: 0 100px;
+    width: 840px;
+    margin: 0 auto;
 }
 
 .plan {
     box-shadow: 0px 0px 15px -5px #777777;
-    width: 400px;
+    width: 350px;
     height: auto;
-    margin: 20px;
+    margin: 10px;
     padding: 60px;
     text-align: center;
 }
@@ -450,7 +453,7 @@ h4 {
 
 /* flow */
 .flow {
-    padding: 0 100px 40px 100px;
+    padding-bottom: 40px;
 }
 
 .flow-boxes {
@@ -576,7 +579,7 @@ h4 {
 
 /* form */
 .form {
-    padding: 0 100px;
+    padding-bottom: 50px;
 }
 
 .form-title {
@@ -585,11 +588,11 @@ h4 {
     font-weight: 600;
     text-align: center;
 }
+
 .mailform {
     display: flex;
     flex-direction: column;
     padding: 0 60px;
-    width: 600px;
     margin: 0 auto;
 }
 
@@ -621,6 +624,7 @@ h4 {
 }
 .field {
     width: 400px;
+    text-align: right;
 }
 
 input {
@@ -636,17 +640,21 @@ input,textarea {
 
 .submit-btn {
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
     border-top: 1px solid #eee;
 }
 
-button {
+.submit-btn >  button{
     background-color: #000;
     color:#fff;
     border: none;
     font-size: 20px;
     padding: 5px 40px;
     text-align: center;
+}
+
+.submit-btn >  button:hover {
+    opacity: 0.6;
 }
 
 footer {
@@ -671,8 +679,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 100px;
-    padding-bottom: 40px;
+    padding:0 100px 40px 100px;
 }
 
 .company-info {
@@ -693,6 +700,10 @@ footer {
         display: none;
     }
 
+    .container {
+        width: 90%;
+
+    }
     /* main */
     /* mainvisual */
     #mainvisual {
@@ -778,7 +789,6 @@ footer {
     }
 
     /* trader */
-
     .trader {
         align-items: flex-start;
         flex-direction: column;
@@ -843,18 +853,55 @@ footer {
     }
 
     .slick01 {
-        width: 350px;
-        padding-left: 50px;
+        width: auto;
     }
 
+    .achievementーphoto > img {
+        width: 300px;
+        height: auto;
+    }
+
+    .achievementーphoto > img {
+        width: 250px;
+        height: auto;
+    }
+
+    .client {
+        top: 140px;
+        left: -20px;
+    }
+
+    .client-name {
+        padding: 10px 40px 10px 20px;
+        font-size: 20px;
+    }
+
+
     /* voice */
+    .voice > .container  {
+        padding: 0;
+    }
+
     .voice {
-        padding: 0 15px 20px 15px;
+        padding-bottom: 20px;
+    }
+
+    .voice-title {
+        text-align: center;
+        padding: 20px 0;
     }
 
     .customer {
-        padding: 15px;
+        padding: 30px;
         width: 300px;
+    }
+
+    .company-introduce {
+        padding: 0 10px;
+    }
+
+    .customer-photo {
+        padding: 0;
     }
 
     .slick-initialized .slick-slide {
@@ -875,13 +922,9 @@ footer {
     }
 
     /* price */
-    .price {
-        padding: 0 20px;
-    }
-
     .plans {
-        padding: 0;
         flex-direction: column;
+        width: 100%;
     }
 
     .plan {
@@ -892,7 +935,7 @@ footer {
     
     /* form */
     .form {
-        padding: 0;
+        padding-bottom: 20px;
     }
 
     .item-name {
@@ -900,7 +943,7 @@ footer {
     }
     /* flow */
     .flow {
-        padding: 0 20px 20px 20px;
+        padding-bottom: 20px;
     }
 
     .flow-box {
@@ -917,7 +960,7 @@ footer {
     }
 
     .flow-info {
-        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .flow-message {
@@ -927,6 +970,29 @@ footer {
     /* introduce-info */
     .introduce-info {
         font-size: 14px;
+    }
+
+    /* form */
+    .mailform {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .field {
+        width: auto;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+
+    .submit-btn {
+        padding-top: 20px;
+    }
+    /* footer */
+    .company {
+        padding: 0 20px;
     }
     .copyRight {
         text-align: center;

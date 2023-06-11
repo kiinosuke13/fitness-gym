@@ -17,6 +17,7 @@ jQuery('.slick01').slick({
         slidesToShow: 1,//スライドを画面に2枚見せる
       }
     },
+    
 ]});
 
 jQuery('.slick02').slick({
