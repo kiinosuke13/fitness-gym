@@ -3,9 +3,6 @@
     display: flex;
 }
 
-.sp-only {
-    display: none;
-}
 body {
     margin: 0;
     padding: 0;
@@ -707,10 +704,6 @@ footer {
         display: none;
     }
 
-    .sp-only {
-        display: block;
-    }
-
     .container {
         width: 90%;
 
@@ -722,7 +715,7 @@ footer {
     }
 
     .main-text {
-        padding: 200px 0 50px 15px;
+        padding: 200px 0 50px 30px;
     }
 
     h1 {
@@ -735,7 +728,7 @@ footer {
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 45px;
         padding-left: 0;
     }
 
