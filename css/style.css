@@ -3,6 +3,9 @@
     display: flex;
 }
 
+.sp-only {
+    display: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -704,6 +707,10 @@ footer {
         display: none;
     }
 
+    .sp-only {
+        display: block;
+    }
+
     .container {
         width: 90%;
 
@@ -715,16 +722,20 @@ footer {
     }
 
     .main-text {
-        padding: 200px 0 50px 25px;
+        padding: 200px 0 50px 15px;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 0;
     }
 
+    .hiragana {
+        font-size: 12px;
+    }
+
     h2 {
-        font-size: 45px;
+        font-size: 30px;
         padding-left: 0;
     }
 
@@ -741,23 +752,21 @@ footer {
         width: 100%;
     }
 
+    .text-container {
+        padding: 20px;
+    }
+
     .feature {
         flex-direction: column;
         padding:0 15px;
     }
 
     .catchy-copys {
-        flex-direction: row;
         padding-right: 0;
-        align-items: center;
     }
 
     .catchy-copy {
         padding-bottom: 10px;
-    }
-
-    .catchy-copy:nth-child(1) {
-        padding-right: 10px;
     }
 
     .cathy-message {
@@ -809,7 +818,7 @@ footer {
     /* resolution */
     .resolution {
         min-width: unset;
-    }    
+    }
     
     h4 {
         font-size: 25px;
@@ -817,8 +826,7 @@ footer {
     }
 
     .team-introduce  {
-        padding: 40px;
-        width: auto;
+        width: 100%;
     }
 
     .point-tag {
@@ -842,6 +850,10 @@ footer {
     
     .institution-photo {
         width: 100%;
+    }
+
+    .black-box,.white-box {
+        padding: 3px 20px;
     }
 
     /* achievement */
@@ -960,7 +972,7 @@ footer {
 
     .step {
         font-size: 12px;
-        padding: 10px;
+        padding: 15px;
     }
 
     .flow-title {
@@ -968,7 +980,7 @@ footer {
     }
 
     .flow-info {
-        padding-top: 20px;
+        padding-bottom: 10px;
     }
 
     .flow-message {
