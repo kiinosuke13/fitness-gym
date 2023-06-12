@@ -719,12 +719,12 @@ footer {
     }
 
     h1 {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 0;
     }
 
     .hiragana {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     h2 {
@@ -774,12 +774,17 @@ footer {
     .worries {
         align-items: center;
         padding-bottom: 20px;
+        
     }
 
     .worry-lists {
         flex-direction: column;
         justify-content: center;
         min-width: unset;
+    }
+    
+    h3 {
+        font-size: 25px;
     }
 
     .worry-list {
