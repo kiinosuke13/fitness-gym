@@ -24,7 +24,7 @@ body {
 }
 
 .main-text {
-    padding-top: 200px;
+    padding-top: 300px;
     padding-left: 300px;
     display: flex;
     justify-content: flex-end;
@@ -32,12 +32,27 @@ body {
     align-items: flex-start;
 }
 
+.number {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+}
+
+.zero {
+    padding-left: 50px;
+}
+
+.hundred {
+    padding-left: 45px;
+}
 h1 {
     font-size: 20px;
     color: #fff;
     text-align: center;
     padding-bottom: 5px;
     margin: 0;
+    font-weight: normal;
 }
 
 .hiragana {
@@ -46,7 +61,7 @@ h1 {
 
 h2 {
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 800;
     color: #fff;
     text-align: left;
     margin: 0;
@@ -76,14 +91,13 @@ h2 {
     width: calc(100% / 6);
 }
 
-.sisetu-photo {
+.sisetsu-photo {
     padding-right: 10px;
 }
 
-.sisetu-photo > img {
+.sisetsu-photo > img {
     width: 100%;
     height: auto;
-   
 }
 
 .contents {
@@ -775,13 +789,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 300px 40px 300px;
+    padding-bottom: 40px;
 }
 
 .company-info {
     color: #fff;
     text-align: left;
 }
+
+.company-info >  P {
+    width: 600px;
+}
+
 /* footer */
 .copyRight {
     text-align: center;
@@ -797,6 +816,7 @@ footer {
     .slick-initialized .slick-slide {
         display: block;
     }
+
     body {
         font-size: 14px;
     }
@@ -840,6 +860,10 @@ footer {
     /* introduce */
     .sisetsu {
         width: calc(100% / 4);
+    }
+
+    .sisetsu-photo {
+        padding: 0;
     }
 
     .sisetsu-list {
@@ -961,7 +985,7 @@ footer {
     }
 
     .text1,.text2,.text3 {
-        padding-left:10px;
+        padding: 0 20px;
     }
 
     /* achievement */
@@ -981,19 +1005,20 @@ footer {
         width: auto;
     }
 
-    .achievementーphoto > img {
-        width: 300px;
-        height: auto;
+    .achievementーphoto {
+        display: flex;
+        overflow-x: hidden;
     }
-
     .achievementーphoto > img {
-        width: 250px;
-        height: auto;
+        height: auto;   
+        flex: 1 1 auto;
+        width: 200px;
+        overflow-x: hidden;
     }
 
     .client {
-        top: 140px;
-        left: -20px;
+        top: 100px;
+        left: -10px;
     }
 
     .client-name {
