@@ -55,8 +55,7 @@ h2 {
 
 .introduce,
 .resolution,
-.voice,
-.flow {
+.voice {
     background-color: rgba(80, 80, 80, 80);
     width: 100%;
 }
@@ -65,16 +64,26 @@ h2 {
 .sisetsu-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin-left: -80px;
+    margin-right: -80px;
+    margin-top: 0;
 }
 
-.sisetsu > img {
-    width: 180px;
+.sisetsu {
+    width: calc(100% / 6);
+}
+
+.sisetu-photo {
+    padding-right: 10px;
+}
+
+.sisetu-photo > img {
+    width: 100%;
     height: auto;
+   
 }
 
 .contents {
@@ -93,6 +102,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding-bottom: 20px;
 }
 
 .catchy-copys {
@@ -115,7 +125,7 @@ h2 {
     align-items: center;
     justify-content: flex-start;
     white-space: nowrap;
-    padding: 10px 60px 10px 20px;
+    padding:5px 15px;
     flex-wrap: nowrap;
     font-weight: 800;
     font-size: 24px;
@@ -154,7 +164,9 @@ h2 {
 
 h3 {
     color: #FFFF00;
-    font-size: 20px;
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .worry-list {
@@ -172,7 +184,9 @@ h3 {
     font-size: 16px;
     border: 1px solid #FFFF00;
     border-radius: 4px;
-    padding: 3px 10px;
+    width: 350px;
+    height: 60px;
+    padding-left: 10px;
     text-align: left;
 }
 
@@ -183,10 +197,13 @@ h3 {
 /* trader */
 .trader {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
+.trader-name {
+    padding-top: 25px;
+}
 .irasto > img {
     width: 400px;
     padding-bottom: 60px;
@@ -295,12 +312,16 @@ h4 {
 }
 
 /* achievement */
+.achievement {
+    padding-bottom: 100px;
+}
+
 .achievement-title {
-    font-size: 25px;
+    font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 40px 0 40px 40px;
+    padding: 100px 0 40px 100px;
     margin: 0;
     font-weight: 600;
     white-space: nowrap;
@@ -311,41 +332,35 @@ h4 {
     content: '';
     background-color: #000;
     position: relative;
-    width: 800px;
+    width: 100%;
     height: 0.3px;
     padding-left: 40px;
     margin-left: 20px;
 }
-
-/* achievement */
 
 .slick01 {
     display: flex;
     list-style: none;
     justify-content: flex-end;
     height: 300px;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.achievementーlist {
-    padding: 0 20px;
-}
-
-.achievementーphoto {
-    position: absolute;
+.achievement-container {
+    position: relative;
 }
 
 .achievementーphoto > img {
-    width: 220px;
+    width: 300px;
+    padding-right: 20px;
     height: auto;
 }
 
 .client {
-    position: relative;
-    top: 120px;
-    left: -20px;
+    position: absolute;
+    top: 180px;
+    left: -10px;
 }
 
 .client-name {
@@ -360,7 +375,7 @@ h4 {
 /* voice */
 .voice {
     color: #fff;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .customer-name {
@@ -369,9 +384,25 @@ h4 {
 }
 
 .voice-title {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0 40px 100px;
+    margin: 0;
     font-weight: 600;
-    font-size: 25px;
-    padding: 40px 0 40px 0;
+    white-space: nowrap;
+}
+
+.voice-title::after {
+    display: flex;
+    content: '';
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 0.3px;
+    padding-left: 40px;
+    margin-left: 20px;
 }
 
 .customer {
@@ -394,26 +425,84 @@ h4 {
 }
 
 .customer-photo {
-    padding: 0 20px;
+    padding-right: 40px;
 }
 
 .customer-photo > img {
     width:300px;
 }
 
-.company-introduce {
-    padding-right: 10px;
+.slick-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    width: 20px;
+    height: 38px;
+    color: transparent;
+    z-index: 1;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+.slick-arrow:hover {
+    opacity: 0.7;
 }
 
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.slick-next::after,
+.slick-prev::after {
+    width: 26px;
+    height: 26px;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    
+}
+  
+  /* next */
+  
+.slick-next {
+    right: -150px;
+}
+.slick-next::after {
+    right: 0;
+    transform: rotate(45deg);
+}
+  
+  /* prev */
+  
+.slick-prev {
+    left: 0;
+}
+.slick-prev::after {
+    left: -150px;
+    transform: rotate(-135deg);
+}  
 /* price */
+.price {
+    padding-bottom: 100px;
+}
+
 .price-text {
     text-align: center;
 }
 
 .price-title {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 .plans {
@@ -428,7 +517,7 @@ h4 {
     width: 350px;
     height: auto;
     margin: 10px;
-    padding: 60px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -453,7 +542,8 @@ h4 {
 
 /* flow */
 .flow {
-    padding-bottom: 40px;
+    padding-bottom: 100px;
+    background-color: #000;
 }
 
 .flow-boxes {
@@ -517,9 +607,10 @@ h4 {
 }
 
 .flow-title {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
-    padding: 40px 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 
 .flow-boxes {
@@ -572,18 +663,18 @@ h4 {
 }
 
 .flow-message {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 38px;
+    font-weight: 400;
     color: #fff;
 }
 
 /* form */
 .form {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .form-title {
-    font-size: 25px;
+    font-size: 30px;
     padding: 40px 0;
     font-weight: 600;
     text-align: center;
@@ -601,11 +692,13 @@ h4 {
 }
 
 .required-btn {
-    background-color: #07f697;
+    background-color: #06bc73;
     padding: 5px;
     font-size: 12px;
     white-space: nowrap;
     display: inline-block;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .item {
@@ -617,11 +710,14 @@ h4 {
 
 .item-name {
     display: flex;
+    font-weight: 550;
+    align-items: center;
 }
 
 .inquiry {
     align-items: flex-start;
 }
+
 .field {
     width: 400px;
     text-align: right;
@@ -631,11 +727,11 @@ input {
     padding:10px;
 }
 
-
 input,textarea {
     background-color: #eee;
     border:none;
     width: 100%;
+    border-radius: 6px;
 }
 
 .submit-btn {
@@ -679,7 +775,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 100px 40px 100px;
+    padding:0 300px 40px 300px;
 }
 
 .company-info {
@@ -695,7 +791,12 @@ footer {
     font-size: 12px;
 }
 
-@media screen and (max-width:767px) {
+
+
+@media screen and (max-width:767px) {    
+    .slick-initialized .slick-slide {
+        display: block;
+    }
     body {
         font-size: 14px;
     }
@@ -738,9 +839,13 @@ footer {
 
     /* introduce */
     .sisetsu {
-        width: 30%;
+        width: calc(100% / 4);
     }
 
+    .sisetsu-list {
+        margin: 0;
+    }
+    
     .sisetsu > img {
         width: 100%;
     }
@@ -825,6 +930,7 @@ footer {
 
     .team-introduce  {
         width: 100%;
+        padding: 20px 0;
     }
 
     .point-tag {
@@ -852,6 +958,10 @@ footer {
 
     .black-box,.white-box {
         padding: 3px 20px;
+    }
+
+    .text1,.text2,.text3 {
+        padding-left:10px;
     }
 
     /* achievement */
@@ -916,14 +1026,6 @@ footer {
 
     .customer-photo {
         padding: 0;
-    }
-
-    .slick-initialized .slick-slide {
-        display: block;
-    }
-
-    .customer-photo {
-        padding-right: 0;
     }
 
     .customer-photo > img {
