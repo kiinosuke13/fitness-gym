@@ -10,6 +10,7 @@ jQuery('.slick01').slick({
     cssEase: 'linear',//動き方。初期値はeaseですが、スムースな動きで見せたいのでlinear
     slidesToShow: 3,//スライドを画面に4枚見せる
     slidesToScroll: 1,//1回のスライドで動かす要素数
+    variableWidth:true,
         responsive: [
       {
       breakpoint: 767,//モニターの横幅が769px以下の見せ方
