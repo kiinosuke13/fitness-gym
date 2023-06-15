@@ -1,7 +1,7 @@
 jQuery('.slick01').slick({
     infinite: true,  
     arrows: false,//左右の矢印はなし
-    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    autoplay: false,//自動的に動き出すか。初期値はfalse。
     autoplaySpeed: 0,//自動的に動き出す待ち時間。初期値は3000ですが今回の見せ方では0
     speed: 6900,//スライドのスピード。初期値は300。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
