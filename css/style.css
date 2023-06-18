@@ -92,7 +92,7 @@ h2 {
 }
 
 .sisetsu-photo {
-    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sisetsu-photo > img {
@@ -901,6 +901,7 @@ footer {
 
     .sisetsu-photo {
         padding-left: 5px;
+        padding-right: 0;
     }
 
     .sisetsu-photo > img {
@@ -913,7 +914,7 @@ footer {
 
     .feature {
         flex-direction: column;
-        padding:20px 15px;
+        padding:20px 10px;
     }
 
     .catchy-copys {
