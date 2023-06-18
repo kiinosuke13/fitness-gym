@@ -282,6 +282,7 @@ h4 {
 
 .text1 {
     display: flex;
+    align-items: center;
     padding-bottom: 10px;
     color: #fff;
 }
@@ -843,7 +844,7 @@ footer {
     }
 
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .pc-only {
@@ -862,7 +863,7 @@ footer {
 
     .main-text {
         padding-top: 200px;
-        padding-left: 60px;
+        padding-left: 30px;
     }
 
     .number {
@@ -890,18 +891,19 @@ footer {
 
     /* introduce */
     .sisetsu {
-        width: calc(100% / 4);
-    }
-
-    .sisetsu-photo {
-        padding: 0;
+        width: calc(100% / 6);
     }
 
     .sisetsu-list {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
-    
-    .sisetsu > img {
+
+    .sisetsu-photo {
+        padding: 0 2px;
+    }
+
+    .sisetsu-photo > img {
         width: 100%;
     }
 
@@ -911,7 +913,7 @@ footer {
 
     .feature {
         flex-direction: column;
-        padding:30px 15px;
+        padding:20px 15px;
     }
 
     .catchy-copys {
@@ -925,14 +927,12 @@ footer {
 
     .cathy-message {
         padding: 10px 30px 10px 10px;
-        font-size: 16px;
     }
 
     .message {
         padding: 0;
         min-width: unset;
         line-height: 30px;
-        font-size: 14px;
     }
 
     .worries {
@@ -948,7 +948,7 @@ footer {
     }
     
     h3 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .worry-list {
@@ -961,7 +961,6 @@ footer {
     }
 
     .box {
-        font-size: 13px;
         width: 100%;
     }
 
@@ -990,7 +989,7 @@ footer {
     }
     
     h4 {
-        font-size: 25px;
+        font-size: 30px;
         padding: 20px 0;
     }
 
@@ -1029,12 +1028,9 @@ footer {
     }
 
     .text2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
-    .text3 {
-        font-size: 14px;
-    }
     .text1,.text2,.text3 {
         padding: 0 20px;
     }
@@ -1047,7 +1043,7 @@ footer {
     .achievement-title {
         padding-left: 0;
         font-size: 25px;
-        padding: 50px 0 20px 20px;
+        padding: 20px 0 20px 20px;
     }
 
     .achievement-title::after {
@@ -1094,7 +1090,7 @@ footer {
     .voice-title {
         padding-left: 0;
         font-size: 25px;
-        padding: 50px 0 20px 20px;
+        padding: 20px 0 20px 20px;
     }
 
     .customer {
@@ -1111,7 +1107,7 @@ footer {
     }
 
     .voice-text {
-        padding: 20px 0;
+        padding-top: 20px;
         text-align: center;
     }
 
@@ -1132,6 +1128,19 @@ footer {
     }
 
     /* price */
+    .price {
+        padding-bottom: 20px;
+    }
+    
+    .price-text {
+        text-align: left;
+    }
+
+    .price-title {
+        text-align: center;
+        padding-top: 20px;
+    }
+
     .plans {
         flex-direction: column;
         width: 100%;
