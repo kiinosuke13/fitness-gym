@@ -827,7 +827,11 @@ footer {
 
 
 
-@media screen and (max-width:767px) {    
+@media screen and (max-width:767px) {
+    .pc-only {
+        display: none;
+    }
+
     .slick-initialized .slick-slide {
         display: block;
     }
@@ -851,25 +855,31 @@ footer {
     }
 
     .main-text {
-        padding: 200px 0 50px 30px;
+        padding-top: 300px;
+        padding-left: 60px;
     }
 
-    h1 {
-        font-size: 18px;
-        padding-left: 0;
-    }
-
-    .hiragana {
+    .number {
         font-size: 16px;
     }
 
-    h2 {
-        font-size: 45px;
+    .zero,
+    .hundred {
+        padding-left: 38px;
+    }
+
+    h1 {
+        font-size: 16px;
         padding-left: 0;
     }
 
     .hiragana {
         font-size: 14px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-left: 0;
     }
 
     /* introduce */
@@ -895,11 +905,12 @@ footer {
 
     .feature {
         flex-direction: column;
-        padding:0 15px;
+        padding:30px 15px;
     }
 
     .catchy-copys {
         padding-right: 0;
+        padding-top: 0;
     }
 
     .catchy-copy {
@@ -913,6 +924,8 @@ footer {
 
     .message {
         padding: 0;
+        min-width: unset;
+        line-height: 30px;
     }
 
     .worries {
@@ -950,12 +963,14 @@ footer {
         flex-direction: column;
     }
 
+    .irasto {
+        text-align: center;
+    }
+
     .irasto > img{
         width: 80%;
-        padding-bottom: 20px;
         margin-top: 0;
-        padding-top: 20px;
-        padding-left: 40px;
+        padding: 20px 0;
     }
     /* resolution */
     .resolution {
@@ -1004,13 +1019,15 @@ footer {
     }
 
     /* achievement */
+    .achievement {
+        padding-bottom: 0;
+    }
     .achievement-title {
-        flex-direction: column;
         padding-left: 0;
+        font-size: 25px;
     }
 
     .achievement-title::after {
-        width: 120px;
         margin-top: 10px;
         padding-left: 0;
         margin-left: 0;
@@ -1060,10 +1077,6 @@ footer {
         width: auto;
     }
 
-    .company-introduce {
-        padding: 0 10px;
-    }
-
     .customer-photo {
         padding: 0;
     }
@@ -1075,6 +1088,22 @@ footer {
     .voice-text {
         padding: 20px 0;
         text-align: center;
+    }
+
+    .slick-next::after, .slick-prev::after {
+        width: 12px;
+        height: 12px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+    }
+
+    .slick-prev::after {
+        left: -20px;
+        top: -120px;
+    }
+    .slick-next {
+        right: -20px;
+        top: -120px;
     }
 
     /* price */
@@ -1112,7 +1141,7 @@ footer {
 
     .step {
         font-size: 12px;
-        padding: 15px;
+        padding: 15px 16px;
     }
 
     .flow-title {
@@ -1159,6 +1188,10 @@ footer {
     .logo {
         padding: 10px;
         font-size: 16px;
+    }
+
+    .company-info > P {
+        width: 100%;
     }
 
     .copyRight {
