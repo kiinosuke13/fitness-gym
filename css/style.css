@@ -92,7 +92,7 @@ h2 {
 }
 
 .sisetsu-photo {
-    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .sisetsu-photo > img {
@@ -891,16 +891,16 @@ footer {
 
     /* introduce */
     .sisetsu {
-        width: calc(100% / 6);
+        width: calc(100% / 4);
     }
 
     .sisetsu-list {
-        margin-left: 0;
+        margin-left: -5px;
         margin-right: 0;
     }
 
     .sisetsu-photo {
-        padding: 0 2px;
+        padding-left: 5px;
     }
 
     .sisetsu-photo > img {
@@ -960,9 +960,6 @@ footer {
         flex-direction: column;
     }
 
-    .box {
-        width: 100%;
-    }
 
     /* trader */
     .trader {
@@ -1061,6 +1058,7 @@ footer {
         display: flex;
         overflow-x: hidden;
     }
+
     .achievementーphoto > img {
         height: auto;   
         flex: 1 1 auto;
@@ -1175,7 +1173,7 @@ footer {
 
     .step {
         font-size: 12px;
-        padding: 15px 16px;
+        padding: 15px 18px;
     }
 
     .flow-title {
@@ -1202,6 +1200,9 @@ footer {
         padding: 0;
     }
 
+    .form-title {
+        padding: 20px 0 20px 0;
+    }
     .field {
         width: 100%;
     }
