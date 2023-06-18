@@ -229,6 +229,7 @@ h3 {
 .trader-name {
     padding-top: 25px;
 }
+
 .irasto > img {
     width: 400px;
     padding-bottom: 60px;
@@ -521,7 +522,7 @@ h4 {
 }  
 /* price */
 .price {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .price-text {
@@ -529,9 +530,9 @@ h4 {
 }
 
 .price-title {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .plans {
@@ -604,18 +605,23 @@ h4 {
 .box_1 {
     background-color:#75A9FF;
 }
+
 .box_2 {
     background-color:#1fbfc4;
 }
+
 .box_3 {
     background-color:#0c6e6b;
 }
+
 .box_4 {
     background-color:#f8cd6b;
 }
+
 .box_5 {
     background-color:#d58f16;
 }
+
 .box_6 {
     background-color:#d45d32;
 }
@@ -630,22 +636,22 @@ h4 {
 .flow-conteiner {
     position: relative;
 }
+
 .flow-text {
     text-align: center;
     color: #fff;
 }
 
 .flow-title {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .flow-boxes {
     list-style: none;
 }
-
 
 .step {
     border-radius: 50%;
@@ -703,8 +709,8 @@ h4 {
 }
 
 .form-title {
-    font-size: 30px;
-    padding: 40px 0;
+    font-size: 25px;
+    padding: 50px 0 20px 0;
     font-weight: 600;
     text-align: center;
 }
@@ -855,7 +861,7 @@ footer {
     }
 
     .main-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-left: 60px;
     }
 
@@ -926,6 +932,7 @@ footer {
         padding: 0;
         min-width: unset;
         line-height: 30px;
+        font-size: 14px;
     }
 
     .worries {
@@ -955,6 +962,7 @@ footer {
 
     .box {
         font-size: 13px;
+        width: 100%;
     }
 
     /* trader */
@@ -972,6 +980,10 @@ footer {
         margin-top: 0;
         padding: 20px 0;
     }
+
+    .trader-name {
+        padding-top: 0;
+    }
     /* resolution */
     .resolution {
         min-width: unset;
@@ -987,9 +999,7 @@ footer {
         padding: 20px 0;
     }
 
-    .point-tag {
-        font-size: 16px;
-    }
+
     
     .institutionTeam {
         display: flex;
@@ -1013,7 +1023,18 @@ footer {
     .black-box,.white-box {
         padding: 3px 20px;
     }
+    
+    .point-tag {
+        font-size: 14px;
+    }
 
+    .text2 {
+        font-size: 20px;
+    }
+
+    .text3 {
+        font-size: 14px;
+    }
     .text1,.text2,.text3 {
         padding: 0 20px;
     }
@@ -1022,9 +1043,11 @@ footer {
     .achievement {
         padding-bottom: 0;
     }
+
     .achievement-title {
         padding-left: 0;
         font-size: 25px;
+        padding: 50px 0 20px 20px;
     }
 
     .achievement-title::after {
@@ -1035,6 +1058,7 @@ footer {
 
     .slick01 {
         width: auto;
+        height: 200px;
     }
 
     .achievementーphoto {
@@ -1068,8 +1092,9 @@ footer {
     }
 
     .voice-title {
-        text-align: center;
-        padding: 20px 0;
+        padding-left: 0;
+        font-size: 25px;
+        padding: 50px 0 20px 20px;
     }
 
     .customer {
