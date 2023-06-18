@@ -927,6 +927,7 @@ footer {
     }
 
     .cathy-message {
+        font-size: 20px;
         padding: 10px 30px 10px 10px;
     }
 
@@ -1107,7 +1108,6 @@ footer {
 
     .voice-text {
         padding-top: 20px;
-        text-align: center;
     }
 
     .slick-next::after, .slick-prev::after {
@@ -1186,7 +1186,7 @@ footer {
     }
 
     .flow-message {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* introduce-info */
@@ -1218,7 +1218,7 @@ footer {
     /* footer */
     .company {
         padding: 0 20px;
-        flex-direction: column;
+        align-items: flex-start;
     }
 
     .logo {
@@ -1228,10 +1228,13 @@ footer {
 
     .company-info > P {
         width: 100%;
+        margin: 0;
     }
 
     .copyRight {
         text-align: center;
         padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 10px;
     }
 }
